@@ -1,0 +1,24 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+
+-- fetch 
+SELECT * FROM EMPLOYEE;
+
+-- CREATING A VIEW
+CREATE VIEW custom_view AS SELECT name, dept FROM EMPLOYEE;
+
+-- VIEWING FROM VIEW
+SELECT * FROM custom_view;
+
+--ALTERING THE VIEW
+--ALTER VIEW custom_view AS SELECT name, ,empId FROM EMPLOYEE;
